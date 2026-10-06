@@ -208,7 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Learning Paths State
     let learningPathsData = null;
-    let currentSubject = 'cybersecurity';
     let currentLevel = 'beginner';
     let completedTopics = JSON.parse(localStorage.getItem('aegis_completed_topics')) || [];
     let allSessions = JSON.parse(localStorage.getItem('aegis_sessions')) || [];
@@ -440,6 +439,32 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === settingsModal) {
                 settingsModal.classList.add('hidden');
             }
+        });
+
+        // Tab Switching Logic
+        const navItems = settingsModal.querySelectorAll('.modal-nav-item');
+        const pages = settingsModal.querySelectorAll('.settings-page');
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const targetId = item.getAttribute('data-target');
+                if (!targetId) return;
+
+                // Remove active class from all tabs and hide all pages
+                navItems.forEach(n => n.classList.remove('active'));
+                pages.forEach(p => {
+                    p.classList.add('hidden');
+                    p.classList.remove('active');
+                });
+
+                // Add active class to clicked tab and show target page
+                item.classList.add('active');
+                const targetPage = document.getElementById(targetId);
+                if (targetPage) {
+                    targetPage.classList.remove('hidden');
+                    targetPage.classList.add('active');
+                }
+            });
         });
     }
 
@@ -1422,7 +1447,11 @@ document.addEventListener('DOMContentLoaded', () => {
         startNewSession('chat');
     } else {
         const latest = allSessions.reduce((a, b) => a.timestamp > b.timestamp ? a : b);
-        loadSession(latest.id);
+        if (['quiz', 'scenario', 'daily'].includes(latest.mode)) {
+            startNewSession('chat');
+        } else {
+            loadSession(latest.id);
+        }
     }
     
     // --- Certificate Logic ---

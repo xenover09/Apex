@@ -202,24 +202,20 @@
                 <button id="close-modal-btn" class="modal-close-icon">
                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.75" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
-                <div class="modal-search">
-                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <input type="text" placeholder="Search settings" disabled>
-                </div>
-                <nav class="modal-nav">
-                    <button class="modal-nav-item active">
+
+                    <button class="modal-nav-item active" data-target="settings-general">
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
                         General
                     </button>
-                    <button class="modal-nav-item">
+                    <button class="modal-nav-item" data-target="settings-notifications">
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
                         Notifications
                     </button>
-                    <button class="modal-nav-item">
+                    <button class="modal-nav-item" data-target="settings-personalization">
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                         Personalization
                     </button>
-                    <button class="modal-nav-item">
+                    <button class="modal-nav-item" data-target="settings-security">
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                         Security
                     </button>
@@ -227,40 +223,67 @@
             </div>
             
             <div class="modal-content-area">
-                <h2 class="modal-page-title">General</h2>
-                
-                <div class="s-list">
-                    <div class="s-row">
-                        <div class="s-label">Appearance</div>
-                        <div class="custom-dropdown" id="theme-dropdown" tabindex="0">
-                            <div class="custom-dropdown-header">
-                                <span class="custom-dropdown-value" id="theme-display">System</span>
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <div class="settings-page active" id="settings-general">
+                    <h2 class="modal-page-title">General</h2>
+                    
+                    <div class="s-list">
+                        <div class="s-row">
+                            <div class="s-label">Appearance</div>
+                            <div class="custom-dropdown" id="theme-dropdown" tabindex="0">
+                                <div class="custom-dropdown-header">
+                                    <span class="custom-dropdown-value" id="theme-display">System</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </div>
+                                <div class="custom-dropdown-list">
+                                    <div class="custom-dropdown-item selected" data-value="system">System</div>
+                                    <div class="custom-dropdown-item" data-value="white">White</div>
+                                    <div class="custom-dropdown-item" data-value="black">Black</div>
+                                </div>
                             </div>
-                            <div class="custom-dropdown-list">
-                                <div class="custom-dropdown-item selected" data-value="system">System</div>
-                                <div class="custom-dropdown-item" data-value="white">White</div>
-                                <div class="custom-dropdown-item" data-value="black">Black</div>
+                        </div>
+
+                        <div class="s-row">
+                            <div class="s-label">Language</div>
+                            <div class="custom-dropdown" id="lang-dropdown" tabindex="0">
+                                <div class="custom-dropdown-header">
+                                    <span class="custom-dropdown-value" id="lang-display">Roman Urdu</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </div>
+                                <div class="custom-dropdown-list">
+                                    <div class="custom-dropdown-item" data-value="english">English</div>
+                                    <div class="custom-dropdown-item selected" data-value="roman-urdu">Roman Urdu</div>
+                                    <div class="custom-dropdown-item" data-value="urdu">Urdu (اردو)</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="s-row">
-                        <div class="s-label">Language</div>
-                        <div class="custom-dropdown" id="lang-dropdown" tabindex="0">
-                            <div class="custom-dropdown-header">
-                                <span class="custom-dropdown-value" id="lang-display">Roman Urdu</span>
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </div>
-                            <div class="custom-dropdown-list">
-                                <div class="custom-dropdown-item" data-value="english">English</div>
-                                <div class="custom-dropdown-item selected" data-value="roman-urdu">Roman Urdu</div>
-                                <div class="custom-dropdown-item" data-value="urdu">Urdu (اردو)</div>
-                            </div>
+                <div class="settings-page hidden" id="settings-notifications">
+                    <h2 class="modal-page-title">Notifications</h2>
+                    <div class="s-list">
+                        <div class="s-row" style="justify-content: flex-start; gap: 1rem; color: var(--text-secondary);">
+                            No notification settings available.
                         </div>
                     </div>
+                </div>
 
+                <div class="settings-page hidden" id="settings-personalization">
+                    <h2 class="modal-page-title">Personalization</h2>
+                    <div class="s-list">
+                        <div class="s-row" style="justify-content: flex-start; gap: 1rem; color: var(--text-secondary);">
+                            Personalization options coming soon.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="settings-page hidden" id="settings-security">
+                    <h2 class="modal-page-title">Security</h2>
+                    <div class="s-list">
+                        <div class="s-row" style="justify-content: flex-start; gap: 1rem; color: var(--text-secondary);">
+                            100% Offline. Your data never leaves your device.
+                        </div>
+                    </div>
                 </div>
             </div>
             
