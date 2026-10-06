@@ -364,6 +364,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.models && data.models.length > 0 && modelSelect) {
                 modelSelect.innerHTML = '';
                 installedModelsList = data.models.filter(m => m.installed).map(m => m.name);
+                const curatedGroup = document.createElement('optgroup');
+                curatedGroup.label = "Curated Models";
+                const otherGroup = document.createElement('optgroup');
+                otherGroup.label = "Other installed";
                 
                 data.models.forEach(m => {
                     const opt = document.createElement('option');
@@ -372,8 +376,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (m.name === 'mistral:7b' && !m.installed) {
                          opt.textContent += ' - 4GB+ PC req';
                     }
-                    modelSelect.appendChild(opt);
+                    if (m.curated) {
+                        curatedGroup.appendChild(opt);
+                    } else {
+                        otherGroup.appendChild(opt);
+                    }
                 });
+                
+                modelSelect.appendChild(curatedGroup);
+                if (otherGroup.children.length > 0) {
+                    modelSelect.appendChild(otherGroup);
+                }
                 
                 if (installedModelsList.includes(currentModel)) {
                     modelSelect.value = currentModel;

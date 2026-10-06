@@ -111,17 +111,18 @@ def get_models():
         for cm in CURATED_MODELS:
             models_info.append({
                 "name": cm,
-                "installed": cm in installed_models
+                "installed": cm in installed_models,
+                "curated": True
             })
             
         for im in installed_models:
             if im not in CURATED_MODELS:
-                models_info.append({"name": im, "installed": True})
+                models_info.append({"name": im, "installed": True, "curated": False})
                 
         return jsonify({"models": models_info})
     except Exception as e:
         app.logger.error(f"Error fetching models: {e}")
-        models_info = [{"name": m, "installed": m == MODEL_NAME} for m in CURATED_MODELS]
+        models_info = [{"name": m, "installed": m == MODEL_NAME, "curated": True} for m in CURATED_MODELS]
         return jsonify({"models": models_info})
 
 @app.route("/api/learning-paths", methods=["GET"])
