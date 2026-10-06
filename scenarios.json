@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Inam ka lalach (Lottery SMS)",
+    "situation": "Aapke phone par SMS aata hai: 'Mubarak ho! Aap 500,000 jeet gaye hain. Inam haasil karne ke liye is link par click karein: http://bit.ly/fake-lottery'",
+    "options": [
+      "Fauran link par click karunga aur apni maloomat de dunga taake inam mil jaye.",
+      "Link par click nahi karunga lekin number par call kar ke tasdeeq karunga.",
+      "Message ko ignore karunga, SMS delete aur number block kar dunga."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Bank se Call (OTP Theft)",
+    "situation": "Aapko call aati hai, shakhs kehta hai: 'Main aapke bank/Easypaisa se baat kar raha hoon, aapka account block hone wala hai. Aapke phone par ek OTP aaya hoga, wo batayein taake account theek kar saku.'",
+    "options": [
+      "Pareshan ho kar fauran OTP bata dunga taake account theek rahay.",
+      "Call kaat dunga aur khud official helpline ya app open kar ke check karunga.",
+      "Unhe ghalat OTP bataunga maze lene ke liye."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Muft WiFi ka Khatra (Public Network)",
+    "situation": "Aap airport ya cafe mein hain. 'Free_Internet_Public' ke naam se ek bina password ka WiFi milta hai. Aapko apni banking app se balance transfer karna hai.",
+    "options": [
+      "Fauran free WiFi se connect kar ke apna bank app kholunga.",
+      "Banking ke liye hamesha apna Mobile Data (4G) istemal karunga, ya VPN lagaunga.",
+      "WiFi connect karunga lekin sirf browser par login karunga app mein nahi."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "La-waris USB (Found Flash Drive)",
+    "situation": "Aapko park ya raste mein ek chamakti hui nayi USB milti hai jis par 'Private Photos' ka label laga hai.",
+    "options": [
+      "Apne computer mein laga kar dekhunga ke isme aakhir hai kya.",
+      "Apne kisi dost ke computer mein laga kar try karunga.",
+      "Isko hargiz kisi computer mein nahi lagaunga, isme malware ya virus ho sakta hai."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Dost ka WhatsApp (Account Takeover)",
+    "situation": "Aapke bohot qareebi dost ka WhatsApp message aata hai: 'Yaar mera accident ho gaya hai, mujhe fauran is number par 15,000 rupay Easypaisa kar do, baad mein bataunga.'",
+    "options": [
+      "Baghair soche samjhe dosti ke khatir fauran paise bhej dunga.",
+      "Usay direct normal sim par call karunga aur confirm karunga ke kya waqai wo musibat mein hai.",
+      "Usay WhatsApp par message karunga ke 'theek hai bhej raha hoon'."
+    ]
+  }
+]

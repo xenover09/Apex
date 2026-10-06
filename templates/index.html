@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX - Offline Cyber Teacher</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-lang="roman-urdu" data-theme="system">
+    <!-- Hamburger for mobile -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.75" fill="none">
+            <path d="M3 12h18M3 6h18M3 18h18"></path>
+        </svg>
+    </button>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-header-row">
+                <button class="icon-btn" id="search-btn" title="Search">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+                <div style="display: flex; gap: 0.25rem;">
+                    <button class="icon-btn" id="export-chat-btn" title="Export Chat">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="search-container" class="hidden" style="margin-bottom: 1rem; padding: 0 1rem;">
+                <input type="text" id="search-input" placeholder="Search history..." style="width: 100%; padding: 0.6rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--control-bg); color: var(--text-main); font-size: 0.9rem; outline: none;">
+            </div>
+            
+            <button id="new-chat-btn" class="new-chat-btn" title="New Chat">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                <span>New chat</span>
+            </button>
+
+            <div class="sidebar-scroll-area">
+                <div class="modes-list">
+                    <button class="mode-btn" data-mode="quiz" title="Quiz">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                        <span>Quiz</span>
+                    </button>
+                    <button class="mode-btn" data-mode="daily" title="Daily Challenge">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><path d="M9 16l2 2 4-4"></path></svg>
+                        <span>Daily Challenge</span>
+                    </button>
+                    <button class="mode-btn" data-mode="scenario" title="Practice">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        <span>Practice</span>
+                    </button>
+                    <button class="mode-btn" data-mode="learning" title="Learning Paths">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+                        <span>Learning Paths</span>
+                    </button>
+                </div>
+
+                <div class="history-section hidden" id="pinned-section">
+                    <h3 class="history-heading">
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="1.75" fill="none"><path d="M12 17v5M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path></svg>
+                        <span>Pinned</span>
+                    </h3>
+                    <div id="pinned-list"></div>
+                </div>
+
+                <div class="history-section" id="recents-section">
+                    <h3 class="history-heading">
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <span>Recents</span>
+                    </h3>
+                    <div id="recents-list"></div>
+                </div>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="user-profile-stats">
+                    <div class="stat-item" title="Your Level">
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <span id="user-level-disp">Lvl 1</span>
+                    </div>
+                    <div class="stat-item" title="Experience Points">
+                        <span id="user-xp-disp">0 XP</span>
+                    </div>
+                    <div class="stat-item" title="Daily Streak">
+                        🔥 <span id="user-streak-disp">0</span>
+                    </div>
+                </div>
+                <div class="settings-wrapper">
+                    <button id="settings-btn" class="settings-btn" title="Settings">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        <span>Settings</span>
+                    </button>
+                </div>
+                <div class="branding">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 22h20L12 2z"></path><path d="M12 12l4 10"></path></svg>
+                    </div>
+                    <div class="brand-text">
+                        <div class="brand-name">APEX</div>
+                        <div class="brand-tag" data-i18n="brand_tag">Aapka offline AI teacher</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="main-area">
+            <header class="main-header">
+                <div class="model-switcher">
+                    <button class="icon-btn" id="desktop-sidebar-toggle" title="Toggle Sidebar">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                    </button>
+                    <span class="model-label">Model:</span>
+                    <div class="s-control-wrapper">
+                        <select id="model-select" class="s-select model-select">
+                            <option value="gemma2:2b">gemma2:2b</option>
+                        </select>
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+
+                <div class="subject-switcher" id="subject-switcher">
+                    <button class="subject-pill active" data-subject="cybersecurity">Cybersecurity</button>
+                    <button class="subject-pill" data-subject="ai">AI</button>
+                    <button class="subject-pill" data-subject="programming">Programming</button>
+                </div>
+
+                <div class="header-badge" id="header-badge">
+                    <span class="dot"></span> <span id="header-badge-text">Gemma 2-2B • Offline</span>
+                </div>
+            </header>
+
+            <div id="chat-container" class="chat-container">
+                <!-- Welcome screen / empty state -->
+                <div id="welcome-screen" class="welcome-screen">
+                    <div class="welcome-logo">
+                        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 22h20L12 2z"></path><path d="M12 12l4 10"></path></svg>
+                    </div>
+                    <h1 data-i18n="welcome_title">Apex se baat karein</h1>
+                    <div class="suggestion-chips">
+                        <button class="chip" data-i18n="chip_1">Mera password mehfooz kaise banau?</button>
+                        <button class="chip" data-i18n="chip_2">Phishing messages kya hote hain?</button>
+                        <button class="chip" data-i18n="chip_3">Public WiFi use karne ka khatra kya hai?</button>
+                    </div>
+                </div>
+                <!-- Chat messages will be injected here by JS -->
+            </div>
+            
+            <div id="learning-paths-container" class="learning-paths-container hidden">
+                <div class="lp-header">
+                    <h1 class="lp-title">Learning Paths</h1>
+                    <div class="lp-tabs">
+                        <button class="lp-tab active" data-subject="cybersecurity">Cybersecurity</button>
+                        <button class="lp-tab" data-subject="ai">AI</button>
+                        <button class="lp-tab" data-subject="programming">Programming</button>
+                    </div>
+                    <div class="lp-progress-wrapper">
+                        <div class="lp-progress-text">
+                            <span id="lp-progress-count">0/14 topics complete</span>
+                            <span id="lp-progress-percent">0%</span>
+                        </div>
+                        <div class="lp-progress-bar">
+                            <div id="lp-progress-fill" class="lp-progress-fill"></div>
+                        </div>
+                        <button id="get-cert-btn" class="hidden" style="margin-top: 1rem; padding: 0.5rem 1rem; border-radius: 8px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; border: none; cursor: pointer; font-weight: 600; font-size: 0.9rem; align-self: flex-start;">Get Certificate</button>
+                    </div>
+                    <div class="lp-level-tabs">
+                        <button class="lp-level-tab active" data-level="beginner">Beginner</button>
+                        <button class="lp-level-tab" data-level="intermediate">Intermediate</button>
+                        <button class="lp-level-tab" data-level="advanced">Advanced</button>
+                    </div>
+                </div>
+                <div id="lp-content" class="lp-content">
+                    <!-- Sections injected by JS -->
+                </div>
+                <div id="cert-container" class="hidden" style="display:flex; flex-direction:column; align-items:center; gap: 1rem; margin-top: 2rem; padding: 1rem;">
+                    <div id="cert-preview-wrapper" style="box-shadow: 0 10px 25px rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden; max-width: 100%; border: 1px solid var(--border-color);"></div>
+                    <button id="download-cert-btn" style="padding: 0.75rem 1.5rem; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">Download PNG</button>
+                </div>
+            </div>
+            
+            <div class="input-container" id="input-container">
+                <div class="input-box">
+                    <textarea id="chat-input" data-i18n-placeholder="placeholder" placeholder="Yahan apna sawal likhein..." rows="1"></textarea>
+                    <button id="send-btn" class="send-btn" disabled>
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- New Pro Settings Modal -->
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-window">
+            
+            <div class="modal-sidebar">
+                <button id="close-modal-btn" class="modal-close-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.75" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+                <div class="modal-search">
+                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" placeholder="Search settings" disabled>
+                </div>
+                <nav class="modal-nav">
+                    <button class="modal-nav-item active">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        General
+                    </button>
+                    <button class="modal-nav-item">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        Notifications
+                    </button>
+                    <button class="modal-nav-item">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        Personalization
+                    </button>
+                    <button class="modal-nav-item">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        Security
+                    </button>
+                </nav>
+            </div>
+            
+            <div class="modal-content-area">
+                <h2 class="modal-page-title">General</h2>
+                
+                <div class="s-list">
+                    <div class="s-row">
+                        <div class="s-label">Appearance</div>
+                        <div class="custom-dropdown" id="theme-dropdown" tabindex="0">
+                            <div class="custom-dropdown-header">
+                                <span class="custom-dropdown-value" id="theme-display">System</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="custom-dropdown-list">
+                                <div class="custom-dropdown-item selected" data-value="system">System</div>
+                                <div class="custom-dropdown-item" data-value="white">White</div>
+                                <div class="custom-dropdown-item" data-value="black">Black</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-row">
+                        <div class="s-label">Language</div>
+                        <div class="custom-dropdown" id="lang-dropdown" tabindex="0">
+                            <div class="custom-dropdown-header">
+                                <span class="custom-dropdown-value" id="lang-display">Roman Urdu</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="custom-dropdown-list">
+                                <div class="custom-dropdown-item" data-value="english">English</div>
+                                <div class="custom-dropdown-item selected" data-value="roman-urdu">Roman Urdu</div>
+                                <div class="custom-dropdown-item" data-value="urdu">Urdu (اردو)</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- For closing sidebar on mobile -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <script src="{{ url_for('static', filename='app.js') }}?v=7"></script>
+</body>
+</html>

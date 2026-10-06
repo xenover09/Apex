@@ -1,0 +1,1151 @@
+{
+  "cybersecurity": {
+    "beginner": [
+      {
+        "id": "cyb_b1",
+        "title": "Online Threats Basics",
+        "desc": "Understand malware, phishing, and common scams."
+      },
+      {
+        "id": "cyb_b2",
+        "title": "Strong Passwords",
+        "desc": "How to create and manage strong passwords."
+      },
+      {
+        "id": "cyb_b3",
+        "title": "Two-Factor Authentication",
+        "desc": "Why 2FA is essential for your accounts."
+      },
+      {
+        "id": "cyb_b4",
+        "title": "Safe Browsing",
+        "desc": "How to browse the web safely and recognize secure sites."
+      },
+      {
+        "id": "cyb_b5",
+        "title": "Social Media Privacy",
+        "desc": "Protecting your personal information on social media."
+      },
+      {
+        "id": "cyb_b6",
+        "title": "Email Security",
+        "desc": "How to spot malicious attachments and links."
+      },
+      {
+        "id": "cyb_b7",
+        "title": "Antivirus Software",
+        "desc": "What it is and why you need it."
+      },
+      {
+        "id": "cyb_b8",
+        "title": "Software Updates",
+        "desc": "The importance of keeping apps and OS up to date."
+      },
+      {
+        "id": "cyb_b9",
+        "title": "Mobile Device Security",
+        "desc": "Basic locks, tracking, and app permissions."
+      },
+      {
+        "id": "cyb_b10",
+        "title": "Recognizing Scams",
+        "desc": "Identifying fake tech support and lottery scams."
+      },
+      {
+        "id": "cyb_b11",
+        "title": "Firewalls 101",
+        "desc": "What a firewall does and why it matters."
+      },
+      {
+        "id": "cyb_b12",
+        "title": "Physical Security",
+        "desc": "Locking screens and protecting devices from theft."
+      },
+      {
+        "id": "cyb_b13",
+        "title": "Safe Downloads",
+        "desc": "How to verify software sources before installing."
+      },
+      {
+        "id": "cyb_b14",
+        "title": "Digital Footprint",
+        "desc": "Understanding what trail you leave online."
+      },
+      {
+        "id": "cyb_b15",
+        "title": "Online Shopping Safety",
+        "desc": "How to safely use credit cards and verify sellers."
+      },
+      {
+        "id": "cyb_b16",
+        "title": "Game Security",
+        "desc": "Protecting gaming accounts and avoiding scams."
+      },
+      {
+        "id": "cyb_b17",
+        "title": "Phishing Examples",
+        "desc": "Looking at real-world phishing emails."
+      },
+      {
+        "id": "cyb_b18",
+        "title": "Bluetooth Security",
+        "desc": "Risks of leaving Bluetooth open and pairing."
+      },
+      {
+        "id": "cyb_b19",
+        "title": "Backup Basics",
+        "desc": "How to create your first simple backup."
+      },
+      {
+        "id": "cyb_b20",
+        "title": "Reporting Incidents",
+        "desc": "Who to call when you get hacked."
+      },
+      {
+        "id": "cyb_b21",
+        "title": "Browser Privacy",
+        "desc": "Incognito mode vs real privacy."
+      },
+      {
+        "id": "cyb_b22",
+        "title": "Cookies and Tracking",
+        "desc": "How websites follow you around the web."
+      },
+      {
+        "id": "cyb_b23",
+        "title": "Password Recovery",
+        "desc": "Securing your recovery emails and questions."
+      },
+      {
+        "id": "cyb_b24",
+        "title": "Mobile App Permissions",
+        "desc": "Why a flashlight app doesn't need your contacts."
+      },
+      {
+        "id": "cyb_b25",
+        "title": "Social Engineering Basics",
+        "desc": "How hackers trick humans."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "cyb_i1",
+        "title": "Phishing Detection",
+        "desc": "Advanced techniques to spot deceptive emails and messages."
+      },
+      {
+        "id": "cyb_i2",
+        "title": "Public WiFi Risks",
+        "desc": "The dangers of open networks and how to use VPNs."
+      },
+      {
+        "id": "cyb_i3",
+        "title": "Data Backup",
+        "desc": "Strategies to protect your data from ransomware."
+      },
+      {
+        "id": "cyb_i4",
+        "title": "Network Security Basics",
+        "desc": "Securing your home Wi-Fi router."
+      },
+      {
+        "id": "cyb_i5",
+        "title": "Identity Theft",
+        "desc": "How it happens and how to prevent it."
+      },
+      {
+        "id": "cyb_i6",
+        "title": "Password Managers",
+        "desc": "Using tools to securely store your passwords."
+      },
+      {
+        "id": "cyb_i7",
+        "title": "Browser Extensions",
+        "desc": "Safe use of add-ons and identifying malicious ones."
+      },
+      {
+        "id": "cyb_i8",
+        "title": "Cloud Security",
+        "desc": "Securing your Google Drive, iCloud, or Dropbox."
+      },
+      {
+        "id": "cyb_i9",
+        "title": "Ransomware Survival",
+        "desc": "What to do if your device gets locked."
+      },
+      {
+        "id": "cyb_i10",
+        "title": "Understanding HTTPS",
+        "desc": "How SSL/TLS certificates protect your data in transit."
+      },
+      {
+        "id": "cyb_i11",
+        "title": "VPN Protocols",
+        "desc": "Differences between OpenVPN, WireGuard, and IPsec."
+      },
+      {
+        "id": "cyb_i12",
+        "title": "MAC Spoofing",
+        "desc": "What it is and when it is used."
+      },
+      {
+        "id": "cyb_i13",
+        "title": "Understanding Malware Types",
+        "desc": "Trojans, Worms, Spyware, and Adware."
+      },
+      {
+        "id": "cyb_i14",
+        "title": "DNS Filtering",
+        "desc": "Using custom DNS to block ads and malware."
+      },
+      {
+        "id": "cyb_i15",
+        "title": "Secure Messaging",
+        "desc": "Signal, WhatsApp, and End-to-End Encryption."
+      },
+      {
+        "id": "cyb_i16",
+        "title": "File Encryption",
+        "desc": "Using VeraCrypt or BitLocker for sensitive files."
+      },
+      {
+        "id": "cyb_i17",
+        "title": "Social Engineering Traps",
+        "desc": "Baiting, Quid Pro Quo, and Tailgating."
+      },
+      {
+        "id": "cyb_i18",
+        "title": "Router Hardening",
+        "desc": "Disabling WPS and updating firmware."
+      },
+      {
+        "id": "cyb_i19",
+        "title": "Email Spoofing",
+        "desc": "How hackers fake sender addresses."
+      },
+      {
+        "id": "cyb_i20",
+        "title": "Keyloggers",
+        "desc": "How they work and how to detect them."
+      },
+      {
+        "id": "cyb_i21",
+        "title": "Network Scanning",
+        "desc": "Introduction to tools like Nmap."
+      },
+      {
+        "id": "cyb_i22",
+        "title": "Endpoint Security",
+        "desc": "Beyond traditional antivirus software."
+      },
+      {
+        "id": "cyb_i23",
+        "title": "Data Loss Prevention",
+        "desc": "Keeping sensitive data inside the organization."
+      },
+      {
+        "id": "cyb_i24",
+        "title": "Honeypots",
+        "desc": "Trapping attackers with fake systems."
+      },
+      {
+        "id": "cyb_i25",
+        "title": "Log Analysis",
+        "desc": "Reading system logs to find anomalies."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "cyb_a1",
+        "title": "Social Engineering",
+        "desc": "Understanding psychological manipulation techniques."
+      },
+      {
+        "id": "cyb_a2",
+        "title": "Encryption Basics",
+        "desc": "How encryption keeps your communications secure."
+      },
+      {
+        "id": "cyb_a3",
+        "title": "Incident Response",
+        "desc": "What to do if you suspect a breach or hack."
+      },
+      {
+        "id": "cyb_a4",
+        "title": "IoT Security",
+        "desc": "Securing smart home devices and cameras."
+      },
+      {
+        "id": "cyb_a5",
+        "title": "Privacy Laws",
+        "desc": "Basic overview of digital rights and privacy policies."
+      },
+      {
+        "id": "cyb_a6",
+        "title": "OSINT Basics",
+        "desc": "Open Source Intelligence and what's public about you."
+      },
+      {
+        "id": "cyb_a7",
+        "title": "Zero Trust Architecture",
+        "desc": "The concept of 'never trust, always verify'."
+      },
+      {
+        "id": "cyb_a8",
+        "title": "Dark Web",
+        "desc": "What it is, how it works, and associated risks."
+      },
+      {
+        "id": "cyb_a9",
+        "title": "Threat Modeling",
+        "desc": "Thinking like a hacker to defend your systems."
+      },
+      {
+        "id": "cyb_a10",
+        "title": "Cryptography Concepts",
+        "desc": "Hashing, symmetric vs asymmetric keys."
+      },
+      {
+        "id": "cyb_a11",
+        "title": "Penetration Testing",
+        "desc": "Introduction to ethical hacking concepts."
+      },
+      {
+        "id": "cyb_a12",
+        "title": "Wireshark Basics",
+        "desc": "Analyzing network traffic packets."
+      },
+      {
+        "id": "cyb_a13",
+        "title": "Buffer Overflows",
+        "desc": "Understanding memory corruption vulnerabilities."
+      },
+      {
+        "id": "cyb_a14",
+        "title": "SQL Injection",
+        "desc": "How bad actors manipulate databases."
+      },
+      {
+        "id": "cyb_a15",
+        "title": "Cross-Site Scripting (XSS)",
+        "desc": "Executing malicious scripts in browsers."
+      },
+      {
+        "id": "cyb_a16",
+        "title": "Botnets & DDoS",
+        "desc": "How distributed denial of service attacks work."
+      },
+      {
+        "id": "cyb_a17",
+        "title": "Reverse Engineering",
+        "desc": "Decompiling and analyzing malware."
+      },
+      {
+        "id": "cyb_a18",
+        "title": "Digital Forensics",
+        "desc": "Tracking evidence after a cyber attack."
+      },
+      {
+        "id": "cyb_a19",
+        "title": "Hardware Security",
+        "desc": "Spectre, Meltdown, and CPU-level flaws."
+      },
+      {
+        "id": "cyb_a20",
+        "title": "Advanced Cryptanalysis",
+        "desc": "Breaking basic ciphers and understanding quantum risks."
+      },
+      {
+        "id": "cyb_a21",
+        "title": "Zero-Day Exploits",
+        "desc": "Vulnerabilities that vendors don't know about yet."
+      },
+      {
+        "id": "cyb_a22",
+        "title": "Privilege Escalation",
+        "desc": "Gaining admin rights from a standard account."
+      },
+      {
+        "id": "cyb_a23",
+        "title": "Man-in-the-Middle Attacks",
+        "desc": "Intercepting traffic between two parties."
+      },
+      {
+        "id": "cyb_a24",
+        "title": "Stenography",
+        "desc": "Hiding data within images or other files."
+      },
+      {
+        "id": "cyb_a25",
+        "title": "Cloud Penetration Testing",
+        "desc": "Unique challenges in securing AWS/Azure."
+      }
+    ]
+  },
+  "ai": {
+    "beginner": [
+      {
+        "id": "ai_b1",
+        "title": "What is AI?",
+        "desc": "Basic introduction to Artificial Intelligence."
+      },
+      {
+        "id": "ai_b2",
+        "title": "Machine Learning",
+        "desc": "How machines learn from data."
+      },
+      {
+        "id": "ai_b3",
+        "title": "Generative AI",
+        "desc": "Understanding tools like ChatGPT and image generators."
+      },
+      {
+        "id": "ai_b4",
+        "title": "Everyday AI",
+        "desc": "Examples of AI in our daily lives."
+      },
+      {
+        "id": "ai_b5",
+        "title": "AI Myths vs Reality",
+        "desc": "Clearing common misconceptions about AI."
+      },
+      {
+        "id": "ai_b6",
+        "title": "Voice Assistants",
+        "desc": "How Siri, Alexa, and Google Assistant work."
+      },
+      {
+        "id": "ai_b7",
+        "title": "Recommendation Systems",
+        "desc": "How YouTube and Netflix suggest content."
+      },
+      {
+        "id": "ai_b8",
+        "title": "History of AI",
+        "desc": "A brief look at how AI evolved."
+      },
+      {
+        "id": "ai_b9",
+        "title": "AI in Healthcare",
+        "desc": "How AI is changing medicine and diagnosis."
+      },
+      {
+        "id": "ai_b10",
+        "title": "AI in Education",
+        "desc": "Personalized learning and AI tutors."
+      },
+      {
+        "id": "ai_b11",
+        "title": "Types of AI",
+        "desc": "Narrow AI, General AI, and Superintelligence."
+      },
+      {
+        "id": "ai_b12",
+        "title": "Turing Test",
+        "desc": "How we measure machine intelligence."
+      },
+      {
+        "id": "ai_b13",
+        "title": "AI in Video Games",
+        "desc": "NPC behavior and pathfinding."
+      },
+      {
+        "id": "ai_b14",
+        "title": "Chatbots History",
+        "desc": "From ELIZA to ChatGPT."
+      },
+      {
+        "id": "ai_b15",
+        "title": "Data for AI",
+        "desc": "Why AI needs so much data."
+      },
+      {
+        "id": "ai_b16",
+        "title": "AI in Smartphones",
+        "desc": "Facial recognition and predictive text."
+      },
+      {
+        "id": "ai_b17",
+        "title": "Self-Driving Cars",
+        "desc": "Basic concepts of autonomous vehicles."
+      },
+      {
+        "id": "ai_b18",
+        "title": "AI in Art",
+        "desc": "Generative art and copyright basics."
+      },
+      {
+        "id": "ai_b19",
+        "title": "Robotics Basics",
+        "desc": "The intersection of hardware and AI."
+      },
+      {
+        "id": "ai_b20",
+        "title": "AI Limitations",
+        "desc": "What AI currently cannot do."
+      },
+      {
+        "id": "ai_b21",
+        "title": "Recommendation Algorithms",
+        "desc": "How TikTok keeps you scrolling."
+      },
+      {
+        "id": "ai_b22",
+        "title": "AI in Finance",
+        "desc": "Fraud detection and algorithmic trading."
+      },
+      {
+        "id": "ai_b23",
+        "title": "Virtual Reality & AI",
+        "desc": "Creating immersive responsive worlds."
+      },
+      {
+        "id": "ai_b24",
+        "title": "AI Assistants",
+        "desc": "The evolution of Siri and Alexa."
+      },
+      {
+        "id": "ai_b25",
+        "title": "Deep Blue vs Kasparov",
+        "desc": "When machines first beat chess grandmasters."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ai_i1",
+        "title": "Natural Language Processing",
+        "desc": "How AI understands human language."
+      },
+      {
+        "id": "ai_i2",
+        "title": "Computer Vision",
+        "desc": "How computers see and interpret images."
+      },
+      {
+        "id": "ai_i3",
+        "title": "Prompt Engineering",
+        "desc": "Tips for communicating effectively with AI."
+      },
+      {
+        "id": "ai_i4",
+        "title": "AI Ethics",
+        "desc": "Bias, fairness, and ethical concerns in AI."
+      },
+      {
+        "id": "ai_i5",
+        "title": "Data Privacy in AI",
+        "desc": "How your data trains the models."
+      },
+      {
+        "id": "ai_i6",
+        "title": "Deepfake Technology",
+        "desc": "Understanding and detecting AI-generated media."
+      },
+      {
+        "id": "ai_i7",
+        "title": "Supervised Learning",
+        "desc": "Training AI with labeled data."
+      },
+      {
+        "id": "ai_i8",
+        "title": "Unsupervised Learning",
+        "desc": "Finding hidden patterns in unlabeled data."
+      },
+      {
+        "id": "ai_i9",
+        "title": "Reinforcement Learning",
+        "desc": "AI learning through trial and error."
+      },
+      {
+        "id": "ai_i10",
+        "title": "AI Hallucinations",
+        "desc": "Why LLMs sometimes make things up."
+      },
+      {
+        "id": "ai_i11",
+        "title": "Training vs Inference",
+        "desc": "The two main phases of an AI model's lifecycle."
+      },
+      {
+        "id": "ai_i12",
+        "title": "Overfitting & Underfitting",
+        "desc": "Common problems in model training."
+      },
+      {
+        "id": "ai_i13",
+        "title": "Gradient Descent",
+        "desc": "How neural networks optimize learning."
+      },
+      {
+        "id": "ai_i14",
+        "title": "Decision Trees",
+        "desc": "A popular machine learning algorithm."
+      },
+      {
+        "id": "ai_i15",
+        "title": "Computer Vision Tasks",
+        "desc": "Object detection, segmentation, and classification."
+      },
+      {
+        "id": "ai_i16",
+        "title": "Tokens and Context Windows",
+        "desc": "How LLMs process and remember text."
+      },
+      {
+        "id": "ai_i17",
+        "title": "Zero-Shot Learning",
+        "desc": "Getting answers without specific training examples."
+      },
+      {
+        "id": "ai_i18",
+        "title": "Transfer Learning",
+        "desc": "Adapting existing models to new tasks."
+      },
+      {
+        "id": "ai_i19",
+        "title": "AI Bias Mitigation",
+        "desc": "Techniques to make algorithms fairer."
+      },
+      {
+        "id": "ai_i20",
+        "title": "Parameters in AI",
+        "desc": "What '8B' or '70B' models really mean."
+      },
+      {
+        "id": "ai_i21",
+        "title": "K-Means Clustering",
+        "desc": "Grouping data without labels."
+      },
+      {
+        "id": "ai_i22",
+        "title": "Support Vector Machines",
+        "desc": "Finding the best boundary between categories."
+      },
+      {
+        "id": "ai_i23",
+        "title": "Hidden Markov Models",
+        "desc": "Predicting sequences of events."
+      },
+      {
+        "id": "ai_i24",
+        "title": "Recurrent Neural Networks (RNN)",
+        "desc": "Processing sequential data like audio."
+      },
+      {
+        "id": "ai_i25",
+        "title": "Convolutional Neural Networks (CNN)",
+        "desc": "The backbone of modern image processing."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ai_a1",
+        "title": "Neural Networks",
+        "desc": "The architecture behind deep learning."
+      },
+      {
+        "id": "ai_a2",
+        "title": "Large Language Models",
+        "desc": "How models like GPT and Gemma work."
+      },
+      {
+        "id": "ai_a3",
+        "title": "AI Alignment",
+        "desc": "Ensuring AI goals align with human values."
+      },
+      {
+        "id": "ai_a4",
+        "title": "Future of AI",
+        "desc": "Trends and future possibilities in AI tech."
+      },
+      {
+        "id": "ai_a5",
+        "title": "Running Local AI",
+        "desc": "Privacy benefits of local offline models like Ollama."
+      },
+      {
+        "id": "ai_a6",
+        "title": "Transformers Architecture",
+        "desc": "The breakthrough that enabled modern LLMs."
+      },
+      {
+        "id": "ai_a7",
+        "title": "Fine-Tuning Models",
+        "desc": "Adapting a base model for specific tasks."
+      },
+      {
+        "id": "ai_a8",
+        "title": "RAG (Retrieval-Augmented Generation)",
+        "desc": "Giving AI access to external knowledge bases."
+      },
+      {
+        "id": "ai_a9",
+        "title": "AI Safety & Governance",
+        "desc": "Regulations and preventing existential risks."
+      },
+      {
+        "id": "ai_a10",
+        "title": "Autonomous Agents",
+        "desc": "AI systems that can plan and execute complex tasks."
+      },
+      {
+        "id": "ai_a11",
+        "title": "Attention Mechanism",
+        "desc": "The math behind modern Transformers."
+      },
+      {
+        "id": "ai_a12",
+        "title": "LoRA and QLoRA",
+        "desc": "Efficiently fine-tuning massive models."
+      },
+      {
+        "id": "ai_a13",
+        "title": "Vector Databases",
+        "desc": "Storing semantic embeddings for RAG."
+      },
+      {
+        "id": "ai_a14",
+        "title": "Generative Adversarial Networks",
+        "desc": "How GANs create realistic images."
+      },
+      {
+        "id": "ai_a15",
+        "title": "Diffusion Models",
+        "desc": "The tech behind Midjourney and Stable Diffusion."
+      },
+      {
+        "id": "ai_a16",
+        "title": "Reinforcement Learning with Human Feedback (RLHF)",
+        "desc": "How ChatGPT was aligned."
+      },
+      {
+        "id": "ai_a17",
+        "title": "Quantization",
+        "desc": "Running large models on consumer hardware."
+      },
+      {
+        "id": "ai_a18",
+        "title": "AI Governance",
+        "desc": "The EU AI Act and global regulations."
+      },
+      {
+        "id": "ai_a19",
+        "title": "Multi-Modal AI",
+        "desc": "Models that understand text, audio, and video simultaneously."
+      },
+      {
+        "id": "ai_a20",
+        "title": "Neuro-symbolic AI",
+        "desc": "Combining neural networks with logic rules."
+      },
+      {
+        "id": "ai_a21",
+        "title": "Mixture of Experts (MoE)",
+        "desc": "How GPT-4 achieves scale efficiently."
+      },
+      {
+        "id": "ai_a22",
+        "title": "Model Pruning",
+        "desc": "Removing redundant weights from a network."
+      },
+      {
+        "id": "ai_a23",
+        "title": "Swarm Intelligence",
+        "desc": "Multiple AI agents working together."
+      },
+      {
+        "id": "ai_a24",
+        "title": "Few-Shot Prompting",
+        "desc": "Advanced prompt engineering techniques."
+      },
+      {
+        "id": "ai_a25",
+        "title": "AI Safety and Alignment",
+        "desc": "Solving the control problem."
+      }
+    ]
+  },
+  "programming": {
+    "beginner": [
+      {
+        "id": "pr_b1",
+        "title": "What is Coding?",
+        "desc": "Introduction to programming concepts."
+      },
+      {
+        "id": "pr_b2",
+        "title": "Variables & Data Types",
+        "desc": "Storing information in code."
+      },
+      {
+        "id": "pr_b3",
+        "title": "Logic & Conditions",
+        "desc": "Making decisions using If/Else statements."
+      },
+      {
+        "id": "pr_b4",
+        "title": "Loops",
+        "desc": "Repeating tasks efficiently."
+      },
+      {
+        "id": "pr_b5",
+        "title": "Input & Output",
+        "desc": "Getting user input and displaying results."
+      },
+      {
+        "id": "pr_b6",
+        "title": "Basic Math in Code",
+        "desc": "Using operators for calculations."
+      },
+      {
+        "id": "pr_b7",
+        "title": "Commenting Code",
+        "desc": "Writing notes to explain your code."
+      },
+      {
+        "id": "pr_b8",
+        "title": "String Manipulation",
+        "desc": "Working with text data."
+      },
+      {
+        "id": "pr_b9",
+        "title": "Syntax Errors",
+        "desc": "Understanding and fixing basic typos."
+      },
+      {
+        "id": "pr_b10",
+        "title": "Your First Program",
+        "desc": "Writing 'Hello, World!' and beyond."
+      },
+      {
+        "id": "pro_b11",
+        "title": "Version Control Basics",
+        "desc": "Why we save code versions."
+      },
+      {
+        "id": "pro_b12",
+        "title": "What is an IDE?",
+        "desc": "Integrated Development Environments explained."
+      },
+      {
+        "id": "pro_b13",
+        "title": "Command Line Intro",
+        "desc": "Basic terminal navigation."
+      },
+      {
+        "id": "pro_b14",
+        "title": "HTML & CSS Basics",
+        "desc": "The building blocks of the web."
+      },
+      {
+        "id": "pro_b15",
+        "title": "What is a Bug?",
+        "desc": "The history and reality of software bugs."
+      },
+      {
+        "id": "pro_b16",
+        "title": "Arrays vs Lists",
+        "desc": "Basic collections of data."
+      },
+      {
+        "id": "pro_b17",
+        "title": "Boolean Logic",
+        "desc": "True, False, AND, OR, NOT."
+      },
+      {
+        "id": "pro_b18",
+        "title": "Reading Documentation",
+        "desc": "How to learn from official manuals."
+      },
+      {
+        "id": "pro_b19",
+        "title": "Writing Clean Code",
+        "desc": "Naming conventions and formatting."
+      },
+      {
+        "id": "pro_b20",
+        "title": "Compilers vs Interpreters",
+        "desc": "How code turns into programs."
+      },
+      {
+        "id": "pro_b21",
+        "title": "Basic Algorithms",
+        "desc": "Step-by-step problem solving."
+      },
+      {
+        "id": "pro_b22",
+        "title": "Flowcharts",
+        "desc": "Visualizing your code logic."
+      },
+      {
+        "id": "pro_b23",
+        "title": "Pseudocode",
+        "desc": "Writing logic without strict syntax."
+      },
+      {
+        "id": "pro_b24",
+        "title": "Variables Scope",
+        "desc": "Where your data lives in memory."
+      },
+      {
+        "id": "pro_b25",
+        "title": "Libraries vs Frameworks",
+        "desc": "Understanding the difference."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "pr_i1",
+        "title": "Functions",
+        "desc": "Creating reusable blocks of code."
+      },
+      {
+        "id": "pr_i2",
+        "title": "Data Structures",
+        "desc": "Using arrays, lists, and dictionaries."
+      },
+      {
+        "id": "pr_i3",
+        "title": "Object-Oriented Basics",
+        "desc": "Introduction to classes and objects."
+      },
+      {
+        "id": "pr_i4",
+        "title": "Debugging",
+        "desc": "Finding and fixing errors in code."
+      },
+      {
+        "id": "pr_i5",
+        "title": "File Handling",
+        "desc": "Reading from and writing to files."
+      },
+      {
+        "id": "pr_i6",
+        "title": "Error Handling",
+        "desc": "Using Try/Catch blocks gracefully."
+      },
+      {
+        "id": "pr_i7",
+        "title": "Modules & Libraries",
+        "desc": "Using pre-written code packages."
+      },
+      {
+        "id": "pr_i8",
+        "title": "Scope & Context",
+        "desc": "Understanding global vs local variables."
+      },
+      {
+        "id": "pr_i9",
+        "title": "Working with Dates",
+        "desc": "Handling time and date formats."
+      },
+      {
+        "id": "pr_i10",
+        "title": "Regular Expressions",
+        "desc": "Pattern matching in strings."
+      },
+      {
+        "id": "pro_i11",
+        "title": "Git and GitHub",
+        "desc": "Commits, branches, and pull requests."
+      },
+      {
+        "id": "pro_i12",
+        "title": "APIs (Application Programming Interfaces)",
+        "desc": "How programs talk to each other over the web."
+      },
+      {
+        "id": "pro_i13",
+        "title": "JSON and XML",
+        "desc": "Data interchange formats."
+      },
+      {
+        "id": "pro_i14",
+        "title": "Asynchronous Programming",
+        "desc": "Promises, callbacks, and async/await."
+      },
+      {
+        "id": "pro_i15",
+        "title": "Unit Testing",
+        "desc": "Writing code to test your code."
+      },
+      {
+        "id": "pro_i16",
+        "title": "Database Basics",
+        "desc": "SQL vs NoSQL."
+      },
+      {
+        "id": "pro_i17",
+        "title": "Regular Expressions (Regex)",
+        "desc": "Pattern matching in strings."
+      },
+      {
+        "id": "pro_i18",
+        "title": "Design Patterns",
+        "desc": "Singleton, Factory, and Observer patterns."
+      },
+      {
+        "id": "pro_i19",
+        "title": "Memory Management",
+        "desc": "Pointers, references, and garbage collection."
+      },
+      {
+        "id": "pro_i20",
+        "title": "Continuous Integration",
+        "desc": "Automating builds and tests."
+      },
+      {
+        "id": "pro_i21",
+        "title": "Object-Oriented Programming",
+        "desc": "Inheritance, Polymorphism, and Encapsulation."
+      },
+      {
+        "id": "pro_i22",
+        "title": "Functional Programming",
+        "desc": "Pure functions and immutability."
+      },
+      {
+        "id": "pro_i23",
+        "title": "RESTful Services",
+        "desc": "Designing standard web APIs."
+      },
+      {
+        "id": "pro_i24",
+        "title": "WebSockets",
+        "desc": "Real-time communication in apps."
+      },
+      {
+        "id": "pro_i25",
+        "title": "Caching Strategies",
+        "desc": "Speeding up your applications."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "pr_a1",
+        "title": "APIs and JSON",
+        "desc": "Connecting systems and exchanging data."
+      },
+      {
+        "id": "pr_a2",
+        "title": "Web Development Basics",
+        "desc": "How HTML, CSS, and JS work together."
+      },
+      {
+        "id": "pr_a3",
+        "title": "Version Control",
+        "desc": "Using Git and GitHub for projects."
+      },
+      {
+        "id": "pr_a4",
+        "title": "Algorithms",
+        "desc": "Step-by-step problem solving."
+      },
+      {
+        "id": "pr_a5",
+        "title": "Clean Code",
+        "desc": "Best practices for readable and maintainable code."
+      },
+      {
+        "id": "pr_a6",
+        "title": "Design Patterns",
+        "desc": "Proven solutions to common software problems."
+      },
+      {
+        "id": "pr_a7",
+        "title": "Databases & SQL",
+        "desc": "Storing and querying structured data."
+      },
+      {
+        "id": "pr_a8",
+        "title": "Asynchronous Programming",
+        "desc": "Promises, Async/Await, and threading."
+      },
+      {
+        "id": "pr_a9",
+        "title": "Testing",
+        "desc": "Writing unit tests to ensure code quality."
+      },
+      {
+        "id": "pr_a10",
+        "title": "Deployment",
+        "desc": "Getting your code running on a server."
+      },
+      {
+        "id": "pro_a11",
+        "title": "Microservices Architecture",
+        "desc": "Breaking monolithic apps into smaller services."
+      },
+      {
+        "id": "pro_a12",
+        "title": "Docker and Containers",
+        "desc": "Packaging apps with their environments."
+      },
+      {
+        "id": "pro_a13",
+        "title": "Kubernetes",
+        "desc": "Orchestrating containerized applications."
+      },
+      {
+        "id": "pro_a14",
+        "title": "Concurrency vs Parallelism",
+        "desc": "Threads, processes, and multicore programming."
+      },
+      {
+        "id": "pro_a15",
+        "title": "Advanced SQL",
+        "desc": "Window functions, CTEs, and query optimization."
+      },
+      {
+        "id": "pro_a16",
+        "title": "GraphQL",
+        "desc": "A modern alternative to REST APIs."
+      },
+      {
+        "id": "pro_a17",
+        "title": "System Design",
+        "desc": "Architecting highly scalable systems."
+      },
+      {
+        "id": "pro_a18",
+        "title": "WebAssembly (Wasm)",
+        "desc": "Running compiled code in the browser at near-native speed."
+      },
+      {
+        "id": "pro_a19",
+        "title": "Distributed Systems",
+        "desc": "Consensus, CAP theorem, and event sourcing."
+      },
+      {
+        "id": "pro_a20",
+        "title": "CI/CD Pipelines",
+        "desc": "Advanced deployment strategies."
+      },
+      {
+        "id": "pro_a21",
+        "title": "Message Queues",
+        "desc": "RabbitMQ, Kafka, and asynchronous processing."
+      },
+      {
+        "id": "pro_a22",
+        "title": "Graph Databases",
+        "desc": "Neo4j and relationship-first data models."
+      },
+      {
+        "id": "pro_a23",
+        "title": "gRPC",
+        "desc": "High-performance remote procedure calls."
+      },
+      {
+        "id": "pro_a24",
+        "title": "Serverless Architecture",
+        "desc": "AWS Lambda and event-driven computing."
+      },
+      {
+        "id": "pro_a25",
+        "title": "Performance Profiling",
+        "desc": "Finding and fixing CPU/Memory bottlenecks."
+      }
+    ]
+  }
+}

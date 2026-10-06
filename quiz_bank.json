@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Mazboot password banane ka behtareen tareeqa kya hai?",
+    "options": ["Apna naam aur birth year likhein", "Password123", "Kam az kam 12 characters, numbers aur symbols ka mix", "Sirf numbers istemal karein"],
+    "answer": 2,
+    "explanation": "Mazboot password lamba hona chahiye aur usme letters, numbers aur special characters hone chahiye, taake use guess karna mushkil ho."
+  },
+  {
+    "question": "Agar aapko kisi 'Bank' se call aaye aur wo aapka OTP maange, to aapko kya karna chahiye?",
+    "options": ["Fauran OTP bata dena chahiye", "Call kaat kar bank ki official helpline par rabta karna chahiye", "Unhe theek OTP ke bajaye ghalat OTP batana chahiye", "Dost se mashwara karna chahiye"],
+    "answer": 1,
+    "explanation": "Bank kabhi bhi call par aapka OTP ya password nahi maangta. Call kaat dein aur tasdeeq ke liye official number par call karein."
+  },
+  {
+    "question": "Public WiFi (jaise cafe ka free WiFi) istemal karte waqt kya nahi karna chahiye?",
+    "options": ["Banking app check karna ya online shopping karna", "News padhna", "Public YouTube videos dekhna", "Doston se chat karna"],
+    "answer": 0,
+    "explanation": "Free WiFi mehfooz nahi hote. Hackers aapka data chori kar sakte hain. Aise network par hassas maloomat (banking) share na karein."
+  },
+  {
+    "question": "Phishing SMS ko kaise pehchanein?",
+    "options": ["Isme amuman inam ka lalach ya dara kar link par click karne ko kaha jata hai", "Wo hamesha Urdu mein hota hai", "Wo hamesha lamba hota hai", "Wo hamesha subah aata hai"],
+    "answer": 0,
+    "explanation": "Phishing messages amuman emergency ya bari offer dikha kar aap se maloomat lene ki koshish karte hain. Aise links hargiz na kholein."
+  },
+  {
+    "question": "Two-Factor Authentication (2FA) ka kya faida hai?",
+    "options": ["Internet speed tez ho jati hai", "Password yaad nahi rakhna parta", "Account login karne par ek izafi security layer lag jati hai (jaise OTP)", "Is se mobile battery bachti hai"],
+    "answer": 2,
+    "explanation": "2FA aapke account ko dogna mehfooz banata hai, kyunke password hack hone ke bawajood bhi login ke liye OTP zaroori hota hai."
+  },
+  {
+    "question": "Koi app agar aisi permission maange jo uske kaam ki na ho (jaise Calculator app Contacts mange), to kya karein?",
+    "options": ["Allow kar dein", "Deny karein aur zaroorat pade to uninstall karein", "Phone restart karein", "App walo ko email karein"],
+    "answer": 1,
+    "explanation": "Baghair zaroorat permissions dene se aapka private data chori ho sakta hai. Ehtiyat karein."
+  },
+  {
+    "question": "Social media par 'Public' profile rakhne ka kya nuqsan hai?",
+    "options": ["Jyada likes milte hain", "Koi bhi anjaan shakhs aapki tasveerein aur maloomat dekh aur chori kar sakta hai", "Account jaldi verify hota hai", "Internet data kam use hota hai"],
+    "answer": 1,
+    "explanation": "Public accounts ka data scammers asani se utha kar fake IDs bana sakte hain ya blackmail kar sakte hain. Privacy zaroori hai."
+  },
+  {
+    "question": "Agar WhatsApp par dost ka message aaye ke 'Mujhe 5000 rs bhej do, emergency hai', to behtar aqdam kya hai?",
+    "options": ["Baghair soche paise bhej dein", "Uske number par normal call kar ke tasdeeq karein ke wohi baat kar raha hai", "Ignore karein", "Police ko call karein"],
+    "answer": 1,
+    "explanation": "Ho sakta hai aapke dost ka account hack ho gaya ho. Hamesha direct call kar ke tasdeeq karni chahiye."
+  },
+  {
+    "question": "Apne software ya apps ko update karna kyun zaroori hai?",
+    "options": ["Storage full karne ke liye", "Naye security flaws (kamzoriyon) ko theek karne ke liye", "Phone ka color change karne ke liye", "Mobile ki speed double karne ke liye"],
+    "answer": 1,
+    "explanation": "Updates mein security patches hote hain jo aapke phone ko naye virus aur hackers se bachate hain."
+  },
+  {
+    "question": "HTTPS mein 'S' ka kya matlab hai (jaise https://www.google.com)?",
+    "options": ["Speed", "Secure (Mehfooz)", "System", "Software"],
+    "answer": 1,
+    "explanation": "Secure hone ka matlab hai ke aapka data aur website ke darmian connection encrypted (mehfooz) hai."
+  },
+  {
+    "question": "Agar raste mein aapko ek USB (flash drive) mili, to aapko kya karna chahiye?",
+    "options": ["Fauran laptop mein laga kar dekhein", "Doston ko de dein", "Apne computer mein hargiz na lagayein, isme virus ho sakta hai", "Isko bech dein"],
+    "answer": 2,
+    "explanation": "Anjaan USB mein viruses ya malware ho sakte hain jo lagate hi aapke system ko tabah ya hack kar sakte hain."
+  },
+  {
+    "question": "Mera password kitne arsay baad tabdeel karna chahiye?",
+    "options": ["Kabhi nahi", "Jab mehsoos ho ke account hack hone ka dar ho ya kisi aur device mein khula reh gaya ho", "Rozana", "Har 10 saal baad"],
+    "answer": 1,
+    "explanation": "Password tabdeel karte rehna achi aadat hai, khaas tor par jab kisi nayi device par login kiya ho."
+  },
+  {
+    "question": "Spam Emails kya hoti hain?",
+    "options": ["Zaroori bank ki emails", "Ghair zaroori, dhoka dahi wali ya ishtehaari emails jo lakho ki tadad mein bheji jati hain", "Doston ki emails", "Office ki emails"],
+    "answer": 1,
+    "explanation": "Spam emails aksar scams ya virus walay links par mabni hoti hain, inhen nahi kholna chahiye."
+  },
+  {
+    "question": "Agar koi website kehti hai 'Aapka phone virus se mutasir hai, abhi antivirus download karein', to ye kya hai?",
+    "options": ["Sach mein virus hai", "Scareware (dara kar app install karwane ka dhoka)", "Google ka message", "Company ki offer"],
+    "answer": 1,
+    "explanation": "Websites automatically check nahi kar saktin ke phone mein virus hai ya nahi. Ye ads dhoka dene ke liye hote hain."
+  },
+  {
+    "question": "Social Engineering ka kya matlab hai?",
+    "options": ["Engineering ki degree", "Insaan ki nafsiyat (dar, lalach) se khel kar maloomat nikalwana", "Social media chalana", "Computer ko theek karna"],
+    "answer": 1,
+    "explanation": "Hackers technology se zyada insaan ke damagh se khailte hain, jaise emergency ka jhuta natak kar ke OTP lena."
+  }
+]
